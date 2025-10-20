@@ -4,14 +4,10 @@ import bodyParser from "body-parser"
 import admin from "./fireBase.js"
 import fetch from "node-fetch"
 import cors from "cors"
-
 dotenv.config({ path: "./config/.env" })
 
 const app = express()
-
-const allowedOrigins = [
-  "http://localhost:5173",
-]
+const allowedOrigins = ["http://localhost:5173",]
 
 app.use(cors({
   origin: function (origin, callback) {
