@@ -10,6 +10,7 @@ dotenv.config({ path: "./config/.env" })
 const app = express()
 
 const allowedOrigins = [
+  "https://reddit5.vercel.app",
   "http://localhost:5173",
   "https://reddit5-server.onrender.com",
 ]
