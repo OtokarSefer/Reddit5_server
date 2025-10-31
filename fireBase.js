@@ -3,7 +3,7 @@ import { getFirestore } from "firebase-admin/firestore"
 import { readFileSync } from "fs"
 
 const serviceAccount = JSON.parse(
-  readFileSync("./config/serviceAccountKey.json", "utf8")
+  readFileSync("serviceAccountKey.json", "utf8")
 )
 
 admin.initializeApp({
